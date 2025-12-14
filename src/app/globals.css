@@ -40,3 +40,26 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Кастом для JSON блока результата */
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #e0e7ff;
+  word-break: break-all !important;
+}
+pre::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e7ff;
+  border-radius: 8px;
+}
+pre::-webkit-scrollbar-thumb {
+  background: #6366f1aa;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .min-h-80, .max-h-80, pre {
+    font-size: 13px !important;
+    padding: 0.7rem !important;
+  }
+}
